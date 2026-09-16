@@ -4,6 +4,7 @@ import { useMediaQuery } from "react-responsive";
 // import { Room } from "/models/room.tsx";
 import { Room } from "./room";
 import HeroLights from "./heroLights";
+import Particles from "./particles";
 export default function HeroModel(){
     const isTablet=useMediaQuery({query:'(max-width-1024x)'});
     const isMobile=useMediaQuery({query:'(max-width-768px)'});
@@ -25,6 +26,7 @@ export default function HeroModel(){
                 <meshStandardMaterial color="red"/>
             </mesh> */}
             <HeroLights/>
+            <Particles count={100}/>
             <group
             scale={isMobile? .7:1}
             position={[0,-3.5,0]}

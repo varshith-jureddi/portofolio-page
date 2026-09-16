@@ -1,6 +1,7 @@
 import { words } from "../constants/index"
 import Button from "../components/Button"
 import HeroModel from "../components/hero models/Hero3d"
+import Counter from "../components/counter";
 export default function Hero(){
     
     return (
@@ -44,6 +45,7 @@ export default function Hero(){
 
                 </figure>
             </div>
+            <Counter/>
         </section>
         </>
     )
